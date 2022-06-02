@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d393ee98-7e47-44b6-9159-92766234e821" name="Default Changelist" comment="" />
+    <list default="true" id="d393ee98-7e47-44b6-9159-92766234e821" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/bai_tap/tao_bang_nang_cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/bai_tap/tao_form_lay_survey_kh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/bai_tap/tao_from_don_gian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/bai_tap/tao_giao_dien_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/bai_tap/tao_thoi-khoa_bieu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/thuc_hanh/tao _bang_nang_cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/thuc_hanh/tao_bang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/thuc_hanh/tao_form_google.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table_git/thuc_hanh/tao_from.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss2-code-org/bài tập 1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss4_git_html/thuc_hanh/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss4_git_html/thuc_hanh/test.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="29jlvznC9JvqsxbgXt9sTQanWH2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,10 +81,45 @@
       <updated>1653634609558</updated>
       <workItem from="1653634613456" duration="59000" />
       <workItem from="1653634694327" duration="1894000" />
+      <workItem from="1654012629927" duration="162000" />
+      <workItem from="1654015948775" duration="17000" />
+      <workItem from="1654048904629" duration="81000" />
+      <workItem from="1654050603820" duration="3177000" />
+      <workItem from="1654064133334" duration="3240000" />
+      <workItem from="1654068199769" duration="10454000" />
+      <workItem from="1654089928458" duration="47000" />
+      <workItem from="1654130902510" duration="36000" />
+      <workItem from="1654130939673" duration="40522000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="508" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1654131011770">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="508" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1654131011770" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1654130934624">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1654130934624" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1654133495261">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1654133495261" />
   </component>
 </project>

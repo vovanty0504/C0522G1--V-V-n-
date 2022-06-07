@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <input type="number"id="diemso1" placeholder="Nhập Số Thứ Nhất">
+        <input type="number"id="diemso2" placeholder="Nhập Số Thứ hai">
+        <button onclick="anvao0()">Addition(+)</button>
+    <button onclick="anvao1()">Addition(-)</button>
+        <button onclick="anvao2()">Addition(*)</button>
+        <button onclick="anvao3()">Addition(/)</button>
+        <h3>Result</h3>
+        <div id="ketqua"> Đây Là Kết Quả</div>
+      <script>
+          function anvao0() {
+              var number1 = document.getElementById("diemso1").value;
+              var number2 = document.getElementById("diemso2").value;
+              var sum = parseInt(number1)+ parseInt(number2);
+              document.getElementById("ketqua").innerHTML= sum;
+
+          }
+          function anvao1() {
+              var  number1 = document.getElementById("diemso1"). value;
+              var  number2 = document.getElementById("diemso2"). value;
+              var sum = parseInt(number1) - parseInt(number2);
+              document.getElementById("ketqua").innerHTML= sum;
+          }
+          function anvao2() {
+              var  number1 = document.getElementById("diemso1"). value;
+              var  number2 = document.getElementById("diemso2"). value;
+              var sum = parseInt(number1) * parseInt(number2);
+              document.getElementById("ketqua").innerHTML= sum;
+          }
+          function anvao3() {
+              var  number1 = document.getElementById("diemso1"). value;
+              var  number2 = document.getElementById("diemso2"). value;
+              var sum = parseInt(number1) / parseInt(number2);
+              document.getElementById("ketqua").innerHTML= sum;
+          }
+
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <table>
+         <tr>
+             <th>
+        <input type="number" placeholder="điểm toán" id="so1">
+         </th>
+         </tr>
+         <tr>
+             <th>
+        <input type="number" placeholder="Điểm Lý" id="so2">
+             </th>
+         </tr>
+         <tr>
+             <th>
+        <input type="number" placeholder="Điểm Hóa" id="so3">
+             </th>
+         </tr>
+         <tr>
+             <td>
+         <button  onclick="abc()" >Enter </button> <br> Tổng Điểm
+        <span id="result"></span> <br>
+        <span >Điểm tb</span>
+        <span id="ketqua"></span>
+             </td>
+     </table>
+<script>
+      function abc() {
+          var maths = document.getElementById("so1").value;
+          var physical = document.getElementById("so2").value;
+          var chemistry = document.getElementById("so3").value;
+          var sum = parseInt(maths) + parseInt(physical) + parseInt(chemistry
+          );
+          document.getElementById("result").innerHTML = sum;
+          var mediumScore = (parseInt(maths) + parseInt(physical) + parseInt(chemistry)) / 3
+          document.getElementById("ketqua").innerHTML = mediumScore;
+      }
+</script>
+
+</body>
+</html>

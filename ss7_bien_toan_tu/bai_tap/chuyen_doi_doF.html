@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <table>
+          <tr>
+              <td>
+                  <input type="numbertext" id="docc" placeholder="Nhập Độ C">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <button onclick="chuyendoidof()">Độ F</button>
+                  <span id="doff"></span>
+              </td>
+          </tr>
+      </table>
+
+       <script>
+           function chuyendoidof() {
+               var doc = document.getElementById("docc").value;
+               var dof = (9*parseInt(doc))/ 5+32;
+               document.getElementById("doff").innerHTML=dof;
+           }
+       </script>
+
+</body>
+</html>

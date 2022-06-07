@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <table>
+         <tr>
+             <td>
+                 <input type="number" id="dientich" placeholder="Nhập bán Kính">
+             </td>
+         </tr>
+         <tr>
+
+             <td>
+                 <button onclick="dientich()">Diện Tích</button>
+                 <span id="result"></span>
+             </td>
+     </table>
+
+       <script>
+           function dientich() {
+               var radius = document.getElementById("dientich") . value;
+               var sum =(parseInt(radius)*parseInt(radius)) * 3.14;
+               document.getElementById("result").innerHTML= sum;
+           }
+       </script>
+
+</body>
+</html>

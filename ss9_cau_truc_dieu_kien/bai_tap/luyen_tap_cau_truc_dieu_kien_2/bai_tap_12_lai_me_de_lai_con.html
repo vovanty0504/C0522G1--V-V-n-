@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let coin = prompt("Số Tiền Vay");
+        let month = prompt("nhập số tháng");
+        if (month > 0 && month <=3){
+            alert(coin*5/100 + " VND");
+        }else if (month <=6 ){
+            alert(coin*10/100 + " VND");
+        }else if ( month <=9){
+            alert(coin * 15 / 100 + " VND");
+        }else if( month <=12){
+            alert(coin * 20 / 100 + " VND");
+        }else {
+            alert("input again");
+        }
+
+
+    </script>
+</body>
+</html>

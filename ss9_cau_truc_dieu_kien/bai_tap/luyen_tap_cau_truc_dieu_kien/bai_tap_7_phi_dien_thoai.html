@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let minute = +prompt("số phút đã gọi")
+    let feeA = 600
+    let feeB = 400
+    let feeC = 200
+    let phoneFeeA = minute * feeA;
+    let phoneFeeB = ((minute - 50) * feeB)+ ( 50 * feeA);
+    let phoneFeeC = (50 * feeC )+ (100 *feeB)+((minute-150)* feeC);
+    if(minute <= 50 ){
+        document.write(phoneFeeA+ " VND")
+    }else if(minute <= 150){
+        document.write(phoneFeeB + " VND")
+    }else {
+        document.write(phoneFeeC+ "VND")
+    }
+
+</script>
+</body>
+</html>

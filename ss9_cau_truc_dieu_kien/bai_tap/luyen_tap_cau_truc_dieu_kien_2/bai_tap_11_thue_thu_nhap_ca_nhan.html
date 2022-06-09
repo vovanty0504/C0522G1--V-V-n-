@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let coin = +prompt("Nhập Số tiền ");
+       if( coin >= 30000000){
+           alert("nộp thuế " + coin * 15 / 100 + " VND");
+       }else if (coin >= 15000000){
+           alert("nộp thuế " + coin * 10 / 100 + " VND");
+       }else if (coin >= 5000000) {
+           alert("nộp thuế " + coin *5 /100 + " VND")
+       }else {
+           alert("Không phải nộp thuế")
+       }
+
+
+
+   </script>
+</body>
+</html>

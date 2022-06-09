@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let number1 = parseFloat(prompt("input A"));
+       let number2 = parseFloat(prompt("input B"));
+       if (number1 == 0 && number2 == 0){
+           alert("phương trình vô số nghiệm");
+       }else if (number1 != 0 && number2 == 0){
+           alert("phương trình có nghiệm X=0");
+       }else if(number1 == 0 && number2 != 0){
+           alert("phương trình vô nghiệm");
+       }else {
+           alert("phương trình có nghiệm x =" +(-number2/number1));
+       }
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính sô cân nặng</h1>
+<label>Nhập cân nặng; (kg) <input type="number" id="cannang"></label> <br> <br>
+<label>Nhập chiều cao; (m) <input type="number" id="chieucao"></label><br> <br>
+<button onclick="checkbmi()"> Kiểm tra</button>
+<br> <br> <br>
+<span id="sum"> </span>
+
+   <script>
+       function checkbmi() {
+           let weight = +document.getElementById("cannang").value;
+           let height = +document.getElementById("chieucao").value;
+           let bodyMassIndex = parseFloat(weight) / (parseFloat(height) * parseFloat(height));
+           document.getElementById("sum").innerText = bodyMassIndex +"";
+           if( bodyMassIndex < 18.5){
+               document.getElementById("sum").innerHTML='Chỉ Số BMI là ' + bodyMassIndex + ': ' +  "Underweight";
+           }else if (bodyMassIndex < 25.0){
+               document.getElementById("sum").innerHTML="chỉ số BMI là: " + bodyMassIndex +": " +   "Normal";
+           }else if (bodyMassIndex < 30.0){
+               document.getElementById("sum").innerHTML="Chỉ số BMI là: " + bodyMassIndex +": "+ "Overweight";
+           }else {
+               document.getElementById("sum").innerHTML= "Obese";
+           }
+
+       }
+
+   </script>
+</body>
+</html>

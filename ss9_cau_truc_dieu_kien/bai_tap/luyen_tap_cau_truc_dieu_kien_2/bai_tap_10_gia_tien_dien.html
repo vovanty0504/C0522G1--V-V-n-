@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let electricityKg= parseFloat(prompt("Nhập Số Kí Điện"));
+       if(electricityKg >= 200 ){
+           alert("tiền điện " +electricityKg * 3500 + " VND" );
+       }else if (electricityKg >= 100){
+           alert("Tiền Điện " + electricityKg * 3000 + " VND");
+       }else if (electricityKg >= 50 ){
+           alert("tiền điện " + electricityKg * 2500 + " VND")
+       }else {
+           alert("Tháng sau đóng")
+       }
+
+   </script>
+
+</body>
+</html>

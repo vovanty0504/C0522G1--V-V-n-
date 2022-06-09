@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let number1 = +prompt("nhập số A");
+        let number2 = +prompt("nhập số B");
+        let number3 = +prompt("nhập số C");
+        let delta = number2 * number2 -(4* number1 * number3);
+        if(delta > 0){
+            alert("phương trình có 2 nghiệm phân biệt là x1="+ ((-number2+ Math.sqrt(delta))/(2*number1))
+                +"x2=" +((-number2-Math.sqrt(delta))/(2*number1)) );
+        }else if (delta == 0){
+            alert("phương trinh có nghiệm kép là x1 = x2 =" +(-number2)/(2*number1));
+        }else {
+            alert("vô số nghiệm")
+        }
+    </script>
+
+</body>
+</html>

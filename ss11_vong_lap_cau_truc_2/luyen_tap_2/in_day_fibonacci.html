@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhập số");
+    let numberA = 0;
+    let numberB = 1;
+    let result = numberB;
+    for (let i = 1; i <= input; i++) {
+        document.write(numberA + "<br>")
+        result = numberA + numberB;
+        numberA = numberB;
+        numberB = result;
+    }
+</script>
+</body>
+</html>

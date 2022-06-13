@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let numberA, numberB, result;
+    numberA = 0;
+    numberB = 1;
+    numberSum = 0;
+    for (let i = 1; i < 20; i++) {
+        document.write(numberA + "<br>");
+        result = numberA + numberB;
+        numberA = numberB;
+        numberB = result;
+        numberSum += numberA;
+    }
+    document.write(numberA + "<br>")
+    document.write("Tổng là :" + numberSum);
+
+</script>
+</body>
+</html>

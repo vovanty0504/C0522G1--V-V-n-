@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let countSNT = 2;
+    let count = 0;
+
+    while (count < 20) {
+        var divition = 0;
+        for (let i = 1; i <= countSNT; i++) {
+            if (countSNT % i === 0) {
+                divition++;
+            }
+        }
+        if (divition === 2) {
+            document.write(countSNT + "<br>");
+            count++;
+        }
+        countSNT++;
+    }
+</script>
+</body>
+</html>

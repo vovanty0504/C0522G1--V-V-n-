@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let month = prompt("Nhập tháng");
+    let year = prompt("Nhập Năm");
+    if (month == 4 || month == 6 || month == 9 || month == 11) {
+        document.write("Tháng " + month + " " + "  Có 30 ngày " + " Năm " + year)
+    } else if (month == 2) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            document.write("Tháng " + month + " Có 29 ngày " + "Năm " + year)
+        } else {
+            document.write("Tháng " + month + " Có 28 ngày " + "Năm " + year)
+        }
+
+    } else {
+        document.write("Tháng " + month + " Có 31 ngày " + " Năm " + year)
+    }
+</script>
+</body>
+</html>

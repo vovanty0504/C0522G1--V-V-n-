@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let monneyA = parseFloat(prompt("Nhập số Tiền"));//1000//
+    let monneyB = parseInt(prompt("nhập số tháng"));
+    let monneyC = parseFloat(prompt("Nhập lãi xuất"));
+    let sum = 0;
+    for (let i = 1; i <= monneyB; i++) {
+        sum += monneyA * monneyC / 100;
+        monneyA += sum;
+
+    }
+    document.write("số tiền lãi sau " + monneyB + " tháng là " + sum);
+
+</script>
+</body>
+</html>

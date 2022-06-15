@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let numberS = [12, 30, 40, 51, 87, 13, 151, 5, 45, 100,];
+    let max = numberS[0];
+    let index = [];
+    for (let i = 0; i < numberS.length; i++) {
+        if (numberS[i] > max) {
+            max = numberS[i];
+            index = i;
+
+        }
+    }
+    document.write("Vị trí tại: " + index + " max là: " + max);
+
+
+</script>
+</body>
+</html>

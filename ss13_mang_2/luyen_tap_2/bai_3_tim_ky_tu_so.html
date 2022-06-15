@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("nhập số kí tự");
+    let array = new Array();
+    for (let i = 0; i < number.length; i++) {
+        array = number[i];
+    }
+    let count = 0
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] >= 0 && number[i] <= 9) {
+            count++
+        }
+    }
+    alert(count);
+</script>
+</body>
+</html>

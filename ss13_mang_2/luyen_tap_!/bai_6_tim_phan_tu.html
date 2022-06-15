@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let array = [];
+    for (let i = 0; i < 10; i++) {
+        array[i] = parseInt(prompt("nhập 10 số nguyên"));
+    }
+    let v = prompt("nhập số tìm kiếm");
+    for (let i = 0; i < array.length; i++){
+        if (v == array[i]) {
+            document.write("V is in the array");
+            break;
+
+        } else {
+            document.write("V is not in the array");
+            break;
+        }
+    }
+</script>
+</body>
+</html>

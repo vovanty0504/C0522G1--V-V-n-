@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let array=[-5,-10,20,-7,30,40,-42];
+         let arrayA=[]
+       count=0
+       for (let i=0;i<array.length;i++){
+           if(array[i]<0){
+               arrayA.push(array[i]);
+               count++
+           }
+       }
+       document.write("Đếm số nguyên âm: " +count +"<br>"+
+           "Hiển thị số nguyên âm: " + arrayA)
+   </script>
+</body>
+</html>

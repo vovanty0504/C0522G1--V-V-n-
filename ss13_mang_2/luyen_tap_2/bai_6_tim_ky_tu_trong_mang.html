@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let input=prompt("nhập chuỗi số ký tự");
+      let array=new Array();
+      for (let i=0;i<input.length;i++){
+          array[i]=input[i]
+      }
+      for (let i=0;i<array.length;i++){
+          if(array[i]==="-"){
+              array[i]="_";
+          }
+      }
+      for (let i=0;i<array.length;i++){
+          document.write(array[i]);
+      }
+
+  </script>
+</body>
+</html>

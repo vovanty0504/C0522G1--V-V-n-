@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputA = prompt("nhập chuỗi thứ nhất");
+    let inputB = prompt("nhập chuỗi thứ nhất");
+    let count = 0;
+    if (inputA.length === inputB.length) {
+        for (let i = 0; i < inputA.length; i++) {
+            if (inputA[i] === inputB[i]) {
+                count++
+            }
+        }
+        if (count === inputA.length) {
+            alert("2 Chuỗi giống nhau");
+        }
+        else {
+            alert("2 chuỗi không giống nhau");
+          }
+        }
+           else {
+        alert("2 Chuôi không giống nhau")
+    }
+
+
+</script>
+</body>
+</html>

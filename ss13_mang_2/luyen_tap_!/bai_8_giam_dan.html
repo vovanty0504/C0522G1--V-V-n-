@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [12, 12, 323, 44, 551, 65, 327, 8432, 19, 240];
+    for (let i = 0; i < array.length - 1; i++) {
+        for (let j = 0; j < array.length - 1; j++) {
+            if (array[j] < array[j + 1]) {
+                let temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+            }
+        }
+    }
+    document.write(array);
+</script>
+</body>
+</html>

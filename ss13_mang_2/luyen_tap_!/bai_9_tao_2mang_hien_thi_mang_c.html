@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let array=[1,2,3,4,5,6];
+        let array2=[7,8,9,10,11,12,13,14,15];
+        let array3= new Array(array.length+array2.length);
+        for (let i=0;i<array.length;i++){
+            array3[i]=array[i];
+        }
+        for (let j=0;j<array2.length;j++){
+            array3[array.length+j]=array2[j]
+        }document.write(array3)
+    </script>
+</body>
+</html>

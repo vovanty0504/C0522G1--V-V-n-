@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("nhập vào");
+    let array = [];
+    let UPPER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    let LOWER = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    for (let i = 0; i < input.length; i++) {
+        array[i] = input[i];
+    }
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j <= UPPER.length; j++) {
+            if (array[i] === UPPER[j]) {
+                array[i] = LOWER[j];
+            } else if (array[i] === LOWER[j]) {
+                array[i] = UPPER[j];
+            }
+        }
+    }
+    document.write(array);
+
+
+</script>
+</body>
+</html>

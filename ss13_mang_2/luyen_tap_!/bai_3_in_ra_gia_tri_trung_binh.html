@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [20, 8, 16, 4];
+    let sum = 0;
+    let result;
+    let max = number[0];
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] > max) {
+            max = number[i]
+        }
+        sum += number[i];
+        result = sum / 4;
+    }
+    document.write("Max là: " + max + "<br>");
+
+    document.write("Điểm trung bình là: " + result);
+
+
+</script>
+</body>
+</html>

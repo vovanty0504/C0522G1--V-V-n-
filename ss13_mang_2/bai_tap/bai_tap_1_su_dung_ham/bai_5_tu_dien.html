@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Tìm kiếm: <input type="text" id="input1" placeholder="nhập từ khóa">
+<button onclick="clickme1()">ấn vào</button>
+<p id="result"></p>
+
+<script>
+    let array = ["apple", "banana"];
+    let array2 = ["táo", "chuối"];
+    let vietnamESE = "";
+
+    function clickme1() {
+        let english = document.getElementById("input1").value;
+        let i = 0;
+
+        for (; i < array.length; i++) {
+            if (english === array[i]) {
+                vietnamESE = array2[i];
+                break;
+            }
+        }
+        if (i === array.length) {
+            alert("k tim thấy");
+        } else {
+            document.getElementById("result").innerHTML = vietnamESE;
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("input A");
+    let number1 = prompt("input B");
+
+    function checkNumber(numberA, numberB) {
+        let temp = numberA;
+        numberA = numberB;
+        numberB = temp;
+        document.write(numberA + "<br>" + numberB);
+
+    }
+
+    checkNumber(number, number1);
+
+
+</script>
+</body>
+</html>

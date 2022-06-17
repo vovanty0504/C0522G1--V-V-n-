@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function input(r) {
+        let sum
+        let roundShapeC = (r * 2) * 3.14;
+        let roundShapeS = (r * r) * 3.14;
+        sum = "chu vi hình tròn " + roundShapeC + "<br>" +
+            "diện tích hình tròn " + roundShapeS;
+        return sum
+    }
+
+    let passIn = parseFloat(prompt("nhập bán kính"));
+    let sum = input(passIn);
+    document.write(sum)
+</script>
+</body>
+</html>

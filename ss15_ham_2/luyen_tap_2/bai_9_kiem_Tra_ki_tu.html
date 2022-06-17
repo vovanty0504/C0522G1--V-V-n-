@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length = prompt('độ dài mảng');
+    let array = []
+    for (let i = 0; i < length; i++) {
+        array[i] = prompt("nhập kí tự");
+    }
+    let input = prompt("nhập số cần tìm");
+    let count = 0
+
+    function checkNumber() {
+        for (let i = 0; i < array.length; i++) {
+            if (input === array[i]) {
+                count += 1
+            }
+        }
+    }
+   checkNumber()
+    if(count>0){
+        document.write(input+ " xuất hiện "+ count + " lần")
+    }else {
+    document.write("-1")
+    }
+</script>
+</body>
+</html>

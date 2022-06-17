@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("input");
+
+    function myFunction() {
+        let number = 1
+        if (input > 0) {
+            for (let i = 1; i <= input; i++) {
+                number = number * i
+            }
+        } else if (input == 0 || input == 1) {
+            return "giai thừa bằng 1"
+        } else {
+            return "không có kết quả"
+        }
+        return number
+    }
+
+    alert(myFunction())
+
+</script>
+</body>
+</html>

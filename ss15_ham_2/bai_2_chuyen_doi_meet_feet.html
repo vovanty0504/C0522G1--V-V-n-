@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Meter:<input type="number" id="feet1" oninput="feet(this.value)"> <br>;
+Kết quả: <span id="result"></span> <br>;
+Foot:<input type="number" id="meter1" oninput=meter(this.value)> <br>;
+Kết quả <span id="result1"></span>;
+
+
+<script>
+    function feet(value) {
+        value = parseInt(value);
+        document.getElementById("result").innerHTML = (value * 0.305).toString();
+    }
+
+    function meter(value1) {
+        value1 = parseInt(value1);
+        document.getElementById("result1").innerText = (value1 * 3.279).toString();
+    }
+
+</script>
+</body>
+</html>

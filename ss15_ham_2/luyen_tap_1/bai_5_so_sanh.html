@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arrayA = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'leo'];
+    minArray();
+    //5k
+    function minArray() {
+        let seach = prompt("nhap");
+        for (let i = 0; i < array.length; i++) {
+            if (seach === array[i]) {
+                return document.write(arrayA[i]);
+            }
+        }
+        return document.write("không tìm thấy ngôi sao ");
+    }
+
+</script>
+</body>
+</html>

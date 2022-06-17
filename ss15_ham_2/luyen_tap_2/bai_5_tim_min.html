@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let numberA = parseFloat(prompt("Nhập số thứ nhất: "));
+    let numberB = parseFloat(prompt("Nhập số thứ hai: "));
+    let numberC = parseFloat(prompt("Nhập số thứ ba: "));
+
+    function checkMin(number1, number2, number3) {
+        if (number1 <= number2 && number1 <= number3) {
+            return number1;
+        } else if (number2 <= number3) {
+            return number2;
+        } else {
+            return number3;
+        }
+    }
+
+    document.write("Số bé nhất là " + checkMin(numberA, numberB, numberC));
+
+
+</script>
+</body>
+</html>

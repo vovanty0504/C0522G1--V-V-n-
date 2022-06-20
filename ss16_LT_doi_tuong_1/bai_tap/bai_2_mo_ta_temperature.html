@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(temperatureC) {
+            this.temperatureC = temperatureC;
+        }
+
+        getCelsius() {
+            return 9 / 5 * this.temperatureC + 32;
+        }
+
+        getKenVin() {
+            return this.temperatureC + 273.15;
+        }
+    }
+
+    let temperature = new Temperature(25);
+    document.write("Độ F: " + temperature.getCelsius() + "<br>" + "Độ KenVin: " + temperature.getKenVin());
+</script>
+</body>
+</html>

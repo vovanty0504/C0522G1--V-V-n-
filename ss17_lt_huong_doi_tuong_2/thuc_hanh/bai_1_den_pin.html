@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+        getEnergy(){
+            return this.energy;
+        }
+        decreaseEnergy(){
+            if (this.energy > 0) {
+                this.energy--;
+            }
+        }
+    }
+    class FlashLamp{
+        constructor(status) {
+            this.status=status;
+        }
+        setBattery(battery){
+            this.battery=battery;
+        }
+        getBatteryInfo(){
+            return this.battery.getEnergy();
+        }
+        light(){
+            if(this.status){
+                document.write("Lighting" + "<br>");
+            }else {
+                document.write("Not Lighting "+ "<br>");
+            }
+        }
+        turnOn(){
+            if(this.getBatteryInfo()>0){
+                this.status=true;
+                this.battery.decreaseEnergy();
+            }
+            else {
+                document.write("Mua pin mới " + "<br>")
+            }
+        }
+        turnOff() {
+            this.status = false;
+        }
+    }
+    let conTho = new Battery(10);
+
+    let thongNhat = new FlashLamp(false);
+    thongNhat.setBattery(conTho);
+    thongNhat.turnOff()
+    thongNhat.light();
+    document.write("Đèn pin chưa bật: "+thongNhat.getBatteryInfo() +"<br>")
+    thongNhat.turnOn();
+    thongNhat.light();
+    document.write("Đèn pin đã bật: "+thongNhat.getBatteryInfo() +"<br>");
+
+</script>
+</body>
+</html>

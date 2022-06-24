@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let row = prompt("nhập hàng");
+    let array1 = [];
+    let col = prompt("nhập cột");
+    for (let i = 0; i < row; i++) {
+        let array2 = [];
+        for (let j = 0; j < col; j++) {
+            array2[j] = parseInt(prompt("nhập phần tử"));
+            document.write(array2[j] + " ");
+        }
+        array1[i] = array2
+        document.write("<br>")
+    }
+
+    function checkNumber(array) {
+        let max = array[0][0];
+        let min = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] > max) {
+                    max = array[i][j];
+                }
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                }
+            }
+
+        }
+        document.write("Max là: " + max + "<br>");
+        document.write("Min là: " + min);
+    }
+
+    checkNumber(array1);
+
+
+</script>
+</body>
+</html>

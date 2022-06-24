@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("nhập đồ dài mảng");
+    let array1 = [];
+    let array2 = [];
+    for (let i = 0; i < number; i++) {
+        array1[i] = prompt("nhập phần tử mảng 1");
+    }
+    for (let i = 0; i < number; i++) {
+        array2[i] = prompt("nhập phần tử mảng 2");
+    }
+
+    let max = array1[0] / array2[0];
+    let numerator = array1[0];
+    let denominator = array2[0];
+    let index = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] / array2[i] > max) {
+            max = array1[i] / array2[i];
+            numerator = array1[i];
+            denominator = array2[i];
+            index = i;
+        }
+    }
+    document.write(numerator + " / " + denominator + " là phân số lớn nhất có chỉ số là: " + index);
+
+
+</script>
+</body>
+</html>

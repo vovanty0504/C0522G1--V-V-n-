@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let input;
+    let amount;
+    let question;
+    do {
+        input = parseInt(prompt(" 1.Cafe  \n2.Cam vắt \n 3.Nước ép cà chua  \n4.Nước lọc  \n5.Nước dừa \n6.Nước ép cà rốt \n7.thoát gọi món"));
+        switch (input) {
+            case 1:
+                amount = parseInt(prompt("nhập số lượng"));
+                question = confirm("bạn có muốn mua gì không");
+                document.write("Số lượng cà phê: " + amount + "<br>" + "Tổng tiền  là: " + amount * 10000 + " VND" + "<br>");
+                break;
+            case 2:
+                amount = parseInt(prompt("nhập số lượng"));
+                question = confirm("bạn có muốn mua gì không");
+                document.write("Số lượng cam vắt: " + amount + "<br>" + "Tổng tiền  là: " + amount * 20000 + " VND" + "<br>");
+                break;
+            case 3:
+                amount = parseInt(prompt("nhập số lượng"));
+                question = confirm("bạn có muốn mua gì không");
+                document.write("Số lượng Nước ép cà chua: " + amount + "<br>" + "Tổng tiền  là: " + amount * 25000 + " VND" + "<br>");
+                break;
+            case 4:
+                amount = parseInt(prompt("nhập số lượng"));
+                question = confirm("bạn có muốn mua gì không");
+                document.write("Số lượng Nước lọc: " + amount + "<br>" + "Tổng tiền  là: " + amount * 5000 + " VND" + "<br>");
+                break;
+            case 5:
+                amount = parseInt(prompt("nhập số lượng"));
+                question = confirm("bạn có muốn mua gì không");
+                document.write("Số lượng Nước dừa: " + amount + "<br>" + "Tổng tiền  là: " + amount * 30000 + " VND" + "<br>");
+                break;
+            case 6:
+                amount = parseInt(prompt("nhập số lượng"));
+                question = confirm("bạn có muốn mua gì không");
+                document.write("Số lượng Nước ép cà rốt: " + amount + "<br>" + "Tổng tiền  là: " + amount * 20000 + " VND" + "<br>");
+                break;
+            default:
+                alert("cảm ơn quý khách!");
+
+        }
+    } while (input !== 7 && question!==false)
+</script>
+</body>
+</html>

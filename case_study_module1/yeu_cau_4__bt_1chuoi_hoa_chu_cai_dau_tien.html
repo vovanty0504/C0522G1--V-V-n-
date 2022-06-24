@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkNumber(str) {
+        let newString = '';
+        let stringA = str.toLowerCase().trim(); //chuyển chuổi đã nhập sang toàn bộ chữ thường
+        document.write("chuỗi đang chạy: "+stringA+"<br>");
+        newString  +=stringA[0].toUpperCase();
+        for (let i =1 ; i < stringA.length ; i++){
+            if (stringA[i] !== ' ' && stringA[i-1] === ' ') {
+                newString  +=stringA[i].toUpperCase();
+            }
+            else{
+                newString+=stringA[i];
+            }
+        }
+        return newString
+    }
+    let input=prompt("a")
+   let c=checkNumber(input)
+    document.write('Kết quả: ' + c);
+
+
+    function checkIndex(a) {
+        max=a[0]
+        for (let i=0;i<a.length;i++){
+            if(a[i]>max){
+                
+            }
+        }
+
+
+    }
+
+
+
+    // let inputString = prompt('Nhập vào một chuỗi:');
+    // document.write('Chuỗi ban đầu: ' + inputString + '<br>')
+    // let newString = '';
+    // let stringA = inputString.toLowerCase().trim(); //chuyển chuổi đã nhập sang toàn bộ chữ thường
+    // document.write("chuỗi đang chạy: "+stringA+"<br>");
+    // newString  +=stringA[0].toUpperCase();
+    // for (i =1 ; i < stringA.length ; i++){
+    //     if (stringA[i] !== ' ' && stringA[i-1] === ' ') {
+    //         newString  +=stringA[i].toUpperCase();
+    //     }
+    //     else{
+    //         newString+=stringA[i];
+    //     }
+    // }
+    // document.write('Kết quả: ' + newString);
+</script>
+</body>
+</html>

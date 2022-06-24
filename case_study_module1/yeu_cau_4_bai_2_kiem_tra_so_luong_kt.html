@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkStr(array) {
+        let array1 = [];
+        for (let i = 0; i < array.length; i++) {
+            let count = 0;
+            for (let j = 0; j < array1.length; j++) {
+                if (array[i] === array1[j]) {
+                    count++;
+                }
+            }
+            if (count === 0) {
+                array1.push(array[i]);
+            }
+        }
+        return array1;
+    }
+
+    let input = prompt("nhập kí tự");
+    document.write("số phần tử khác nhau là: " + checkStr(input) + "<br>" + " có kí tự chung là: " + checkStr(input).length);
+
+
+    // let input = prompt("nhập kí tự");
+    // let array = [];
+    // for (let i = 0; i < input.length; i++) {
+    //     let count = 0;
+    //     for (let j = 0; j < array.length; j++) {
+    //         if (input[i] === array[j]) {
+    //             count++;
+    //
+    //         }
+    //     }
+    //     if (count === 0) {
+    //         array.push(input[i]);
+    //     }
+    // }
+    // document.write("Kí tự vừa nhập:   " + input + "<br>");
+    // document.write("số phần tử khác nhau là:   " + array + "<br>" + " có kí tự chung là:   " + array.length);
+
+
+    // let input = prompt("nhập kí tự");
+    // let array = [input[0]];
+    // let countN = 0;
+    // for (let i = 0; i < input.length; i++) {
+    //     let count = 0;
+    //     for (let j = 0; j < array.length; j++) {
+    //         if (input[i] === array[j]) {
+    //             count++;
+    //
+    //         }
+    //     }
+    //     if (count === 0) {
+    //         array.push(input[i]);
+    //     }
+    // }
+    // countN = array.length;
+    // document.write("Kí tự vừa nhập:   " + input + "<br>");
+    // document.write("số phần tử khác nhau là:   " + array + "<br>" + " có kí tự chung là:   " + countN);
+
+</script>
+</body>
+</html>

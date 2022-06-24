@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = prompt("nhập số tiền thu nhập");
+    let tax;
+    if (money >= 15000000) {
+        taxMoney = money * 20 / 100;
+    } else if (money >= 7000000) {
+        tax=money*10/100;
+    } else {
+        tax=money*5/100;
+    }
+  document.write("Tiền thuế là: "+tax+" VND"+"<br>" +
+      "Tiền lương nhận là:"+(money-tax)+" VND")
+
+</script>
+</body>
+</html>
